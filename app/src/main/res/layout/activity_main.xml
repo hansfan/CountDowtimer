@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.Design.NoActionBar"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:background="@color/btn_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Start"
+        android:textColor="@color/btn_front"
+        android:textSize="130dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="110dp"
+        android:layout_height="270dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/btn_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:text=""
+        android:textColor="@color/btn_front"
+
+        android:textSize="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="110dp"
+        android:layout_height="107dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="4dp"
+        android:text=""
+        android:textColor="@color/btn_front"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
